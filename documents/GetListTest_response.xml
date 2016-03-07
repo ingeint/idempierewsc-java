@@ -1,0 +1,45 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:getListResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <WindowTabData xmlns="http://idempiere.org/ADInterface/1_0" NumRows="3" StartRow="1" TotalRows="3">
+        <DataSet>
+          <DataRow>
+            <field column="AD_Ref_List_ID">
+              <val>763</val>
+            </field>
+            <field column="Value">
+              <val>H</val>
+            </field>
+            <field column="Name">
+              <val>Higher</val>
+            </field>
+          </DataRow>
+          <DataRow>
+            <field column="AD_Ref_List_ID">
+              <val>762</val>
+            </field>
+            <field column="Value">
+              <val>L</val>
+            </field>
+            <field column="Name">
+              <val>Lower</val>
+            </field>
+          </DataRow>
+          <DataRow>
+            <field column="AD_Ref_List_ID">
+              <val>761</val>
+            </field>
+            <field column="Value">
+              <val>S</val>
+            </field>
+            <field column="Name">
+              <val>Same</val>
+            </field>
+          </DataRow>
+        </DataSet>
+        <RowCount>3</RowCount>
+        <Success>true</Success>
+      </WindowTabData>
+    </ns1:getListResponse>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,14 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:createDataResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <StandardResponse xmlns="http://idempiere.org/ADInterface/1_0" RecordID="1000077">
+        <outputFields>
+          <outputField column="C_BPartner_ID" value="1000077"/>
+          <outputField column="Name" value="Test BPartner"/>
+          <outputField column="TaxID" value="123456"/>
+          <outputField column="Value" value="Test_BPartner1456448368056"/>
+        </outputFields>
+      </StandardResponse>
+    </ns1:createDataResponse>
+  </soap:Body>
+</soap:Envelope>

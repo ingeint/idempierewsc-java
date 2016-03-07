@@ -1,0 +1,70 @@
+<soapenv:Envelope xmlns:_0="http://idempiere.org/ADInterface/1_0" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <_0:compositeOperation>
+      <_0:CompositeRequest>
+        <_0:serviceType>CompositeMovementTest</_0:serviceType>
+        <_0:operations>
+          <_0:operation postCommit="false" preCommit="false">
+            <_0:TargetPort>createData</_0:TargetPort>
+            <_0:ModelCRUD>
+              <_0:serviceType>CreateMovementTest</_0:serviceType>
+              <_0:DataRow>
+                <_0:field column="C_DocType_ID">
+                  <_0:val>143</_0:val>
+                </_0:field>
+                <_0:field column="MovementDate">
+                  <_0:val>2015-10-25 00:00:00</_0:val>
+                </_0:field>
+                <_0:field column="AD_Org_ID">
+                  <_0:val>11</_0:val>
+                </_0:field>
+              </_0:DataRow>
+            </_0:ModelCRUD>
+          </_0:operation>
+          <_0:operation postCommit="false" preCommit="false">
+            <_0:TargetPort>createData</_0:TargetPort>
+            <_0:ModelCRUD>
+              <_0:serviceType>CreateMovementLineTest</_0:serviceType>
+              <_0:DataRow>
+                <_0:field column="M_Movement_ID">
+                  <_0:val>@M_Movement.M_Movement_ID</_0:val>
+                </_0:field>
+                <_0:field column="M_Product_ID">
+                  <_0:val>138</_0:val>
+                </_0:field>
+                <_0:field column="MovementQty">
+                  <_0:val>1</_0:val>
+                </_0:field>
+                <_0:field column="M_Locator_ID">
+                  <_0:val>50001</_0:val>
+                </_0:field>
+                <_0:field column="M_LocatorTo_ID">
+                  <_0:val>50000</_0:val>
+                </_0:field>
+                <_0:field column="AD_Org_ID">
+                  <_0:val>11</_0:val>
+                </_0:field>
+              </_0:DataRow>
+            </_0:ModelCRUD>
+          </_0:operation>
+          <_0:operation postCommit="false" preCommit="false">
+            <_0:TargetPort>setDocAction</_0:TargetPort>
+            <_0:ModelSetDocAction>
+              <_0:serviceType>DocActionMovementTest</_0:serviceType>
+              <_0:recordIDVariable>@M_Movement.M_Movement_ID</_0:recordIDVariable>
+              <_0:docAction>CO</_0:docAction>
+            </_0:ModelSetDocAction>
+          </_0:operation>
+        </_0:operations>
+        <_0:ADLoginRequest>
+          <_0:user>SuperUser</_0:user>
+          <_0:pass>System</_0:pass>
+          <_0:ClientID>11</_0:ClientID>
+          <_0:RoleID>102</_0:RoleID>
+          <_0:OrgID>0</_0:OrgID>
+        </_0:ADLoginRequest>
+      </_0:CompositeRequest>
+    </_0:compositeOperation>
+  </soapenv:Body>
+</soapenv:Envelope>

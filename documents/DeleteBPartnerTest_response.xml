@@ -1,0 +1,7 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:deleteDataResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <StandardResponse xmlns="http://idempiere.org/ADInterface/1_0" RecordID="1000003"/>
+    </ns1:deleteDataResponse>
+  </soap:Body>
+</soap:Envelope>

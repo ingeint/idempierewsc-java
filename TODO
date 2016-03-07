@@ -1,0 +1,3 @@
+- [x] Improve management of secure connection (X509 Certificates)
+- [x] Improve management of proxy connection
+- [x] Improve Connections Attempts

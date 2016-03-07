@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tabCreateBPartner">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCreateValue"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/value" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtCreateName"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCreateTaxID"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/tax_id" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSelectLogo"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="400px"
+        android:minWidth="400px"
+        android:contentDescription="@string/logo_create" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:id="@+id/btnSendCreate"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

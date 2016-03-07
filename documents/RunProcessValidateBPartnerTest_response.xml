@@ -1,0 +1,11 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:runProcessResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <RunProcessResponse xmlns="http://idempiere.org/ADInterface/1_0" IsError="false">
+        <Error>OK</Error>
+        <Summary>OK</Summary>
+        <LogInfo/>
+      </RunProcessResponse>
+    </ns1:runProcessResponse>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,30 @@
+<soapenv:Envelope xmlns:_0="http://idempiere.org/ADInterface/1_0" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <_0:createUpdateData>
+      <_0:ModelCRUDRequest>
+        <_0:ModelCRUD>
+          <_0:serviceType>CreateUpdateBPartnerTest</_0:serviceType>
+          <_0:DataRow>
+            <_0:field column="Name">
+              <_0:val>Test BPartner 2</_0:val>
+            </_0:field>
+            <_0:field column="Value">
+              <_0:val>Test_BPartner_CreateUpdateTest</_0:val>
+            </_0:field>
+            <_0:field column="TaxID">
+              <_0:val>123456</_0:val>
+            </_0:field>
+          </_0:DataRow>
+        </_0:ModelCRUD>
+        <_0:ADLoginRequest>
+          <_0:user>SuperUser</_0:user>
+          <_0:pass>System</_0:pass>
+          <_0:ClientID>11</_0:ClientID>
+          <_0:RoleID>102</_0:RoleID>
+          <_0:OrgID>0</_0:OrgID>
+        </_0:ADLoginRequest>
+      </_0:ModelCRUDRequest>
+    </_0:createUpdateData>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,26 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:readDataResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <WindowTabData xmlns="http://idempiere.org/ADInterface/1_0" NumRows="1" StartRow="1" TotalRows="1">
+        <DataSet>
+          <DataRow>
+            <field column="C_BPartner_ID">
+              <val>1000000</val>
+            </field>
+            <field column="Value">
+              <val>Test_BPartner1446488860321</val>
+            </field>
+            <field column="Name">
+              <val>Test BPartner</val>
+            </field>
+            <field column="TaxID">
+              <val>123456</val>
+            </field>
+          </DataRow>
+        </DataSet>
+        <RowCount>1</RowCount>
+        <Success>true</Success>
+      </WindowTabData>
+    </ns1:readDataResponse>
+  </soap:Body>
+</soap:Envelope>

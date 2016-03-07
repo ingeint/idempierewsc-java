@@ -1,0 +1,20 @@
+<soapenv:Envelope xmlns:_0="http://idempiere.org/ADInterface/1_0" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <_0:getList>
+      <_0:ModelGetListRequest>
+        <_0:ModelGetList>
+          <_0:serviceType>GetListTest</_0:serviceType>
+          <_0:AD_Reference_ID>350</_0:AD_Reference_ID>
+        </_0:ModelGetList>
+        <_0:ADLoginRequest>
+          <_0:user>SuperUser</_0:user>
+          <_0:pass>System</_0:pass>
+          <_0:ClientID>11</_0:ClientID>
+          <_0:RoleID>102</_0:RoleID>
+          <_0:OrgID>0</_0:OrgID>
+        </_0:ADLoginRequest>
+      </_0:ModelGetListRequest>
+    </_0:getList>
+  </soapenv:Body>
+</soapenv:Envelope>

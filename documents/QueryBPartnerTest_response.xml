@@ -1,0 +1,46 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:queryDataResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <WindowTabData xmlns="http://idempiere.org/ADInterface/1_0" NumRows="2" StartRow="3" TotalRows="5">
+        <DataSet>
+          <DataRow>
+            <field column="C_BPartner_ID">
+              <val>50008</val>
+            </field>
+            <field column="Value">
+              <val>Store South</val>
+            </field>
+            <field column="Name">
+              <val>Store South</val>
+            </field>
+            <field column="TaxID">
+              <val xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </field>
+            <field column="Logo_ID">
+              <val xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </field>
+          </DataRow>
+          <DataRow>
+            <field column="C_BPartner_ID">
+              <val>50009</val>
+            </field>
+            <field column="Value">
+              <val>Store West</val>
+            </field>
+            <field column="Name">
+              <val>Store West</val>
+            </field>
+            <field column="TaxID">
+              <val xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </field>
+            <field column="Logo_ID">
+              <val xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </field>
+          </DataRow>
+        </DataSet>
+        <RowCount>2</RowCount>
+        <Success>true</Success>
+      </WindowTabData>
+    </ns1:queryDataResponse>
+  </soap:Body>
+</soap:Envelope>

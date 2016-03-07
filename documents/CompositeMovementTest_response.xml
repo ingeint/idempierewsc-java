@@ -1,0 +1,21 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:compositeOperationResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <CompositeResponses xmlns="http://idempiere.org/ADInterface/1_0">
+        <CompositeResponse>
+          <StandardResponse RecordID="1000000">
+            <outputFields>
+              <outputField column="M_Movement_ID" value="1000000"/>
+            </outputFields>
+          </StandardResponse>
+          <StandardResponse RecordID="1000000">
+            <outputFields>
+              <outputField column="M_MovementLine_ID" value="1000000"/>
+            </outputFields>
+          </StandardResponse>
+          <StandardResponse IsError="false" RecordID="1000000"/>
+        </CompositeResponse>
+      </CompositeResponses>
+    </ns1:compositeOperationResponse>
+  </soap:Body>
+</soap:Envelope>

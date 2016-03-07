@@ -1,0 +1,13 @@
+- In branch dev
+- Change Version in ComponentInfo
+- Make jar 
+- Test Android
+- Make apk
+- Commit
+- In branch release
+- Merge with dev
+- Change Version Tag in README
+- Commit in branch release
+- Update to dev 
+- Add tag of release
+- Push

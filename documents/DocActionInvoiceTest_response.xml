@@ -1,0 +1,7 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns1:setDocActionResponse xmlns:ns1="http://idempiere.org/ADInterface/1_0">
+      <StandardResponse xmlns="http://idempiere.org/ADInterface/1_0" IsError="false" RecordID="1000000"/>
+    </ns1:setDocActionResponse>
+  </soap:Body>
+</soap:Envelope>
