@@ -86,7 +86,7 @@ public class WSCreateImage {
 	}
 
 	public static void main(String[] args) {
-		// CREATE DE COMPOSITE WS
+		// CREATE COMPOSITE WS
 		CompositeOperationRequest compositeOperation = new CompositeOperationRequest();
 		compositeOperation.setWebServiceType("CompositeBPartnerTest");
 
@@ -139,7 +139,7 @@ public class WSCreateImage {
 			client.writeResponse(System.out);
 			System.out.println();
 
-			// GET DE RESPONSE
+			// GET RESPONSE
 			if (response.getStatus() == WebServiceResponseStatus.Error) {
 				System.out.println(response.getErrorMessage());
 			} else {
