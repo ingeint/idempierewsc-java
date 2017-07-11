@@ -19,8 +19,10 @@
 
 package org.idempiere.webservice.client.base;
 
-import org.idempiere.webservice.client.base.Enums.WebServiceResponseStatus;
+import org.idempiere.webservice.client.base.Enums.ErrorType;
 import org.idempiere.webservice.client.base.Enums.WebServiceResponseModel;
+import org.idempiere.webservice.client.base.Enums.WebServiceResponseStatus;
+import org.idempiere.webservice.logic.WebServiceResponseLogic;
 
 /**
  * Class to abstract the iDempiere response
@@ -93,6 +95,14 @@ public abstract class WebServiceResponse {
 	 */
 	public void setWebServiceType(String webServiceType) {
 		this.webServiceType = webServiceType;
+	}
+	
+	/**
+	 * Get the error type
+	 * @return
+	 */
+	public ErrorType getErrorType() {
+		return WebServiceResponseLogic.geErrorType(getErrorMessage());
 	}
 
 }
