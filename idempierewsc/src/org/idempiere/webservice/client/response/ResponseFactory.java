@@ -150,9 +150,16 @@ public class ResponseFactory {
 			}
 
 			NodeList xmlProcess = response.getElementsByTagName("RunProcessResponse");
-
+			boolean isReport = false;
+			
+			
 			if (xmlProcess.getLength() > 0) {
-				if (Boolean.parseBoolean(xmlProcess.item(0).getAttributes().getNamedItem("IsError").getNodeValue())) {
+				if (xmlProcess.item(0) != null && 
+						xmlProcess.item(0).getAttributes() != null &&
+						xmlProcess.item(0).getAttributes().getNamedItem("IsReport") != null &&
+						Boolean.parseBoolean(xmlProcess.item(0).getAttributes().getNamedItem("IsReport").getNodeValue())) {
+					isReport = true;
+				} else if (Boolean.parseBoolean(xmlProcess.item(0).getAttributes().getNamedItem("IsError").getNodeValue())) {
 					responseModel.setStatus(WebServiceResponseStatus.Error);
 					NodeList xmlError = response.getElementsByTagName("Error");
 					responseModel.setErrorMessage(xmlError.item(0).getTextContent());
@@ -162,11 +169,17 @@ public class ResponseFactory {
 
 			responseModel.setStatus(WebServiceResponseStatus.Successful);
 
-			NodeList xmlSummary = response.getElementsByTagName("Summary");
-			responseModel.setSummary(xmlSummary.item(0).getTextContent());
+			if (isReport) {
+				NodeList xmlData = response.getElementsByTagName("Data");
+				responseModel.setSummary(xmlData.item(0).getTextContent());
+				
+			} else {
+				NodeList xmlSummary = response.getElementsByTagName("Summary");
+				responseModel.setSummary(xmlSummary.item(0).getTextContent());
 
-			NodeList xmlLogInfo = response.getElementsByTagName("LogInfo");
-			responseModel.setLogInfo(xmlLogInfo.item(0).getTextContent());
+				NodeList xmlLogInfo = response.getElementsByTagName("LogInfo");
+				responseModel.setLogInfo(xmlLogInfo.item(0).getTextContent());				
+			}
 
 			return responseModel;
 		} catch (Exception e) {
