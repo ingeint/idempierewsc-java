@@ -172,6 +172,7 @@ public class ResponseFactory {
 			if (isReport) {
 				NodeList xmlData = response.getElementsByTagName("Data");
 				responseModel.setSummary(xmlData.item(0).getTextContent());
+				responseModel.setReportFormat(xmlProcess.item(0).getAttributes().getNamedItem("ReportFormat").getNodeValue());
 				
 			} else {
 				NodeList xmlSummary = response.getElementsByTagName("Summary");
