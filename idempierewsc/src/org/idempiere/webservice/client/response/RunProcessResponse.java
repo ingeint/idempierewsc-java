@@ -29,6 +29,7 @@ public class RunProcessResponse extends WebServiceResponse {
 
 	private String logInfo;
 	private String summary;
+	private String reportFormat;
 
 	/**
 	 * Gets the logInfo
@@ -66,6 +67,23 @@ public class RunProcessResponse extends WebServiceResponse {
 	 */
 	public void setSummary(String summary) {
 		this.summary = summary;
+	}
+	
+	/**
+	 * Gets The reportFormat
+	 * @return reportFormat
+	 */
+	public String getReportFormat() {
+		return reportFormat;
+	}
+	
+	/**
+	 * Sets the reportFormat
+	 * 
+	 * @param reportFormat
+	 */
+	public void setReportFormat(String reportFormat) {
+		this.reportFormat = reportFormat;
 	}
 
 	/*
